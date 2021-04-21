@@ -23,7 +23,7 @@ from EDScoutCore.ZmqWrappers import Receiver
 from EDScoutCore.EDScout import EDScout
 from EDScoutCore import EDSMInterface
 from EDScoutWebUI import HudColourAdjuster
-from EDScoutWebUI import WindowToggler
+# from EDScoutWebUI import WindowToggler
 from EdScoutConfig import ConfigHandler
 from EDScoutWebUI.VersionChecker import check_version
 
@@ -259,10 +259,10 @@ if __name__ == '__main__':
         scout = EDScout(force_polling=args.force_polling, record_output=record_output)
 
         # Enable toggling
-        toggler = WindowToggler.ScoutToggler()
+        # toggler = WindowToggler.ScoutToggler()
         # Enable transparency adjustment
         window_title = "ED Scout " + __version__
-        trans = WindowToggler.TransparencySetter(window_title)
+        # trans = WindowToggler.TransparencySetter(window_title)
 
         # Launch the web server either directly or as an app
         if ui:
